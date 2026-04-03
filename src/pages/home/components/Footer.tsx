@@ -33,7 +33,7 @@ export default function Footer() {
               className="h-14 w-auto object-contain mb-5 brightness-0 invert"
             />
             <p className="text-stone-400 text-sm leading-relaxed">
-              Vistoria imobiliária com excelência técnica em João Pessoa e toda a região litorânea da Paraíba. Laudos confiáveis, profissionais certificados.
+              Vistoria imobiliária com excelência técnica,&nbsp;correspondente bancário em João Pessoa e toda a região litorânea da Paraíba. Laudos confiáveis, profissionais certificados.
             </p>
             <div className="flex gap-3 mt-6">
               {[
@@ -98,7 +98,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3">
                 <i className="ri-phone-line text-[#C9963A] mt-0.5 text-base flex-shrink-0" />
-                <a href="tel:+5583998765432" className="text-stone-400 text-sm hover:text-[#C9963A] transition-colors cursor-pointer">(83) 9 9876-5432</a>
+                <a href="tel:+5583991653499" className="text-stone-400 text-sm hover:text-[#C9963A] transition-colors cursor-pointer">(83) 9 9165-3499</a>
               </li>
               <li className="flex items-start gap-3">
                 <i className="ri-mail-line text-[#C9963A] mt-0.5 text-base flex-shrink-0" />
@@ -106,7 +106,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <i className="ri-map-pin-2-line text-[#C9963A] mt-0.5 text-base flex-shrink-0" />
-                <span className="text-stone-400 text-sm">Av. Epitácio Pessoa, 3700 - Tambaú, João Pessoa/PB</span>
+                <span className="text-stone-400 text-sm">João Pessoa/PB</span>
               </li>
               <li className="flex items-start gap-3">
                 <i className="ri-time-line text-[#C9963A] mt-0.5 text-base flex-shrink-0" />

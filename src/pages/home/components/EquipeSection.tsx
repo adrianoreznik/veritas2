@@ -4,16 +4,22 @@ const equipe = [
     cargo: "Engenheiro Civil & Diretor Técnico",
     crea: "CREA-PB 12.345-D",
     especialidade: "Estruturas e Patologias Construtivas",
-    foto: "https://readdy.ai/api/search-image?query=professional%20Brazilian%20male%20civil%20engineer%20in%20his%2040s%2C%20formal%20business%20attire%20dark%20suit%2C%20confident%20smile%2C%20clean%20white%20studio%20background%2C%20headshot%20portrait%20photography%2C%20sharp%20focus%2C%20professional%20corporate%20photo&width=400&height=400&seq=team-veritas-01&orientation=squarish",
-    social: ["ri-linkedin-box-fill", "ri-mail-line"],
+    foto: "https://static.readdy.ai/image/8e384c9bc7f8801e8dfb8b46c454c1a0/e8195a5224deb386a251e3a280953d5b.jpeg",
+    social: [
+      { icon: "ri-linkedin-box-fill", href: "https://br.linkedin.com/in/luizanogas" },
+      { icon: "ri-mail-line", href: "mailto:grupoveritasjp@gmail.com" },
+    ],
   },
   {
     nome: "Lucia Souza",
-    cargo: "Arquiteta & Inspetora Sênior",
+    cargo: "Advogada",
     crea: "CAU-PB A-98765",
-    especialidade: "Inspeções Prediais e Pós-Obra",
-    foto: "https://readdy.ai/api/search-image?query=professional%20Brazilian%20female%20architect%20in%20her%2030s%2C%20smart%20casual%20business%20attire%2C%20warm%20confident%20smile%2C%20clean%20white%20studio%20background%2C%20headshot%20portrait%20photography%2C%20sharp%20focus%2C%20professional%20corporate%20photo&width=400&height=400&seq=team-veritas-02&orientation=squarish",
-    social: ["ri-linkedin-box-fill", "ri-mail-line"],
+    especialidade: "Assessoria Jurídica",
+    foto: "https://static.readdy.ai/image/8e384c9bc7f8801e8dfb8b46c454c1a0/240da27da9014158d985a65d91e5a6a8.jpeg",
+    social: [
+      { icon: "ri-linkedin-box-fill", href: "https://linkedin.com/in/luciasouza" },
+      { icon: "ri-mail-line", href: "mailto:grupoveritasjp@gmail.com" },
+    ],
   },
   {
     nome: "Eng. Marcos Souza",
@@ -21,7 +27,10 @@ const equipe = [
     crea: "CREA-PB 54.321-D",
     especialidade: "Laudos Periciais e Patologias",
     foto: "https://readdy.ai/api/search-image?query=professional%20Brazilian%20male%20engineer%20in%20his%2035s%2C%20business%20casual%20attire%2C%20friendly%20professional%20smile%2C%20clean%20white%20studio%20background%2C%20headshot%20portrait%20photography%2C%20sharp%20focus%2C%20professional%20corporate%20photo&width=400&height=400&seq=team-veritas-03&orientation=squarish",
-    social: ["ri-linkedin-box-fill", "ri-mail-line"],
+    social: [
+      { icon: "ri-linkedin-box-fill", href: null as string | null },
+      { icon: "ri-mail-line", href: null as string | null },
+    ],
   },
   {
     nome: "Arq. Juliana Neves",
@@ -29,7 +38,10 @@ const equipe = [
     crea: "CAU-PB A-11234",
     especialidade: "Vistoria Cautelar e Locação",
     foto: "https://readdy.ai/api/search-image?query=professional%20Brazilian%20female%20architect%20in%20her%20late%2020s%2C%20professional%20business%20attire%2C%20confident%20warm%20smile%2C%20clean%20white%20studio%20background%2C%20headshot%20portrait%20photography%2C%20sharp%20focus%2C%20professional%20corporate%20photo&width=400&height=400&seq=team-veritas-04&orientation=squarish",
-    social: ["ri-linkedin-box-fill", "ri-mail-line"],
+    social: [
+      { icon: "ri-linkedin-box-fill", href: null as string | null },
+      { icon: "ri-mail-line", href: null as string | null },
+    ],
   },
 ];
 
@@ -75,14 +87,26 @@ export default function EquipeSection() {
                 </span>
                 {/* Socials */}
                 <div className="flex gap-3 mt-4">
-                  {m.social.map((icon) => (
-                    <button
-                      key={icon}
-                      className="w-8 h-8 flex items-center justify-center rounded-full bg-[#1B3A2E]/10 hover:bg-[#C9963A] hover:text-white text-[#1B3A2E] transition-all duration-200 cursor-pointer"
-                    >
-                      <i className={`${icon} text-base`} />
-                    </button>
-                  ))}
+                  {m.social.map((s) =>
+                    s.href ? (
+                      <a
+                        key={s.icon}
+                        href={s.href}
+                        rel="nofollow"
+                        target="_blank"
+                        className="w-8 h-8 flex items-center justify-center rounded-full bg-[#1B3A2E]/10 hover:bg-[#C9963A] hover:text-white text-[#1B3A2E] transition-all duration-200 cursor-pointer"
+                      >
+                        <i className={`${s.icon} text-base`} />
+                      </a>
+                    ) : (
+                      <button
+                        key={s.icon}
+                        className="w-8 h-8 flex items-center justify-center rounded-full bg-[#1B3A2E]/10 hover:bg-[#C9963A] hover:text-white text-[#1B3A2E] transition-all duration-200 cursor-pointer"
+                      >
+                        <i className={`${s.icon} text-base`} />
+                      </button>
+                    )
+                  )}
                 </div>
               </div>
             </div>

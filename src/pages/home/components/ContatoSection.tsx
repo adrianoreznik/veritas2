@@ -2,7 +2,7 @@ const contatos = [
   {
     icon: "ri-phone-line",
     label: "Telefone / WhatsApp",
-    value: "(83) 9 9876-5432",
+    value: "(83) 9 9165-3499",
     href: "tel:+5583998765432",
   },
   {
@@ -14,8 +14,8 @@ const contatos = [
   {
     icon: "ri-map-pin-2-line",
     label: "Endereço",
-    value: "Av. Epitácio Pessoa, 3700 - Tambaú, João Pessoa/PB",
-    href: "https://maps.app.goo.gl/RDyXXN4CaAfb8ZBM7",
+    value: "João Pessoa/PB",
+    href: null,
   },
   {
     icon: "ri-time-line",
@@ -87,7 +87,7 @@ export default function ContatoSection() {
           <div className="rounded-2xl overflow-hidden min-h-[400px] lg:min-h-full">
             <iframe
               title="Veritas Vistoria Imobiliária - João Pessoa"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9043454395344!2d-34.84778982474752!3d-7.117208992886879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace836a1a88681%3A0x7f578caa4f16b34a!2sAv.+Epit%C3%A1cio+Pessoa%2C+3700+-+Tamba%C3%BA%2C+Jo%C3%A3o+Pessoa+-+PB%2C+58039-000!5e0!3m2!1spt-BR!2sbr!4v1700000000001!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126120.39836523!2d-34.9286!3d-7.1195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace836a1a88681%3A0x5c5b8b8b8b8b8b8b!2sJo%C3%A3o+Pessoa%2C+PB!5e0!3m2!1spt-BR!2sbr!4v1700000000001!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "400px" }}
